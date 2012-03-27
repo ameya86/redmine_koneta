@@ -1,0 +1,11 @@
+<p>
+  <label><%= l(:field_notice_close_button) %></label>
+  <%= hidden_field_tag('settings[notice_close_button]', '0') %>
+  <%= check_box_tag('settings[notice_close_button]', '1', '1' == @settings['notice_close_button']) %>
+</p>
+
+<p>
+  <label><%= l(:field_project_menu_add_search) %></label>
+  <%= hidden_field_tag('settings[project_menu_add_search]', '0') %>
+  <%= check_box_tag('settings[project_menu_add_search]', '1', '1' == @settings['project_menu_add_search']) %>
+</p>
