@@ -1,11 +1,73 @@
-<p>
-  <label><%= l(:field_notice_close_button) %></label>
-  <%= hidden_field_tag('settings[notice_close_button]', '0') %>
-  <%= check_box_tag('settings[notice_close_button]', '1', '1' == @settings['notice_close_button']) %>
-</p>
+<fieldset>
+  <legend><%= l(:label_general) %></legend>
+  <label class="inline" for="settings_notice_close_button">
+    <%= hidden_field_tag('settings[notice_close_button]', '0', :id => nil) %>
+    <%= check_box_tag('settings[notice_close_button]', '1', '1' == @settings['notice_close_button']) %>
+    <%= l(:field_notice_close_button) %>
+  </label>
+</fieldset>
 
-<p>
-  <label><%= l(:field_project_menu_add_search) %></label>
-  <%= hidden_field_tag('settings[project_menu_add_search]', '0') %>
-  <%= check_box_tag('settings[project_menu_add_search]', '1', '1' == @settings['project_menu_add_search']) %>
-</p>
+<p>&nbsp;</p>
+
+<fieldset>
+  <legend><%= l(:field_project_menu_extend) %></legend>
+  <label class="inline" for="settings_project_menu_add_search">
+    <%= hidden_field_tag('settings[project_menu_add_search]', '0', :id => nil) %>
+    <%= check_box_tag('settings[project_menu_add_search]', '1', '1' == @settings['project_menu_add_search']) %>
+    <%= l(:label_search) %>
+  </label>
+</fieldset>
+
+<p>&nbsp;</p>
+
+<fieldset>
+  <legend><%= l(:field_application_menu_extend) %></legend>
+
+  <label class="inline" for="settings_all_activities">
+    <%= hidden_field_tag('settings[all_activities]', '0', :id => nil) %>
+    <%= check_box_tag('settings[all_activities]', '1', '1' == @settings['all_activities']) %>
+    <%= l(:label_activity) %>
+  </label>
+  <br />
+
+  <label class="inline" for="settings_all_issues">
+    <%= hidden_field_tag('settings[all_issues]', '0', :id => nil) %>
+    <%= check_box_tag('settings[all_issues]', '1', '1' == @settings['all_issues']) %>
+    <%= l(:label_issue_plural) %>
+  </label>
+  <br />
+
+  <label class="inline" for="settings_all_gantts">
+    <%= hidden_field_tag('settings[all_gantts]', '0', :id => nil) %>
+    <%= check_box_tag('settings[all_gantts]', '1', '1' == @settings['all_gantts']) %>
+    <%= l(:label_gantt) %>
+  </label>
+  <br />
+
+  <label class="inline" for="settings_all_calendars">
+    <%= hidden_field_tag('settings[all_calendars]', '0', :id => nil) %>
+    <%= check_box_tag('settings[all_calendars]', '1', '1' == @settings['all_calendars']) %>
+    <%= l(:label_calendar) %>
+  </label>
+  <br />
+
+  <label class="inline" for="settings_all_time_entries">
+    <%= hidden_field_tag('settings[all_time_entries]', '0', :id => nil) %>
+    <%= check_box_tag('settings[all_time_entries]', '1', '1' == @settings['all_time_entries']) %>
+    <%= l(:label_time_entry_plural) %>
+  </label>
+  <br />
+
+  <label class="inline" for="settings_all_news">
+    <%= hidden_field_tag('settings[all_news]', '0', :id => nil) %>
+    <%= check_box_tag('settings[all_news]', '1', '1' == @settings['all_news']) %>
+    <%= l(:label_news_plural) %>
+  </label>
+  <br />
+
+  <label class="inline" for="settings_all_search">
+    <%= hidden_field_tag('settings[all_search]', '0', :id => nil) %>
+    <%= check_box_tag('settings[all_search]', '1', '1' == @settings['all_search']) %>
+    <%= l(:label_search) %>
+  </label>
+</fieldset>

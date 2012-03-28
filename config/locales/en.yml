@@ -1,5 +1,7 @@
 en:
   field_notice_close_button: "Add close button on notice"
   field_project_menu_add_search: "Add searcj link on project module"
+  field_project_menu_extend: Extend project menu
+  field_application_menu_extend: Extend application menu
 
   project_module_search: Search
