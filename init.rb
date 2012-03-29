@@ -2,12 +2,13 @@ require 'redmine'
 require 'koneta/access_controller_patch'
 require 'koneta/application_helper_patch'
 require 'koneta/search_controller_patch'
+require 'koneta/queries_helper_patch'
 
 Redmine::Plugin.register :redmine_koneta do
   name 'Redmine Koneta plugin'
   author 'Author name'
   description 'This is a plugin for Redmine'
-  version '0.0.2'
+  version '0.0.3'
   url 'https://github.com/ameya86/redmine_koneta'
   author_url 'http://blog.livedoor.jp/ameya86/'
 
@@ -21,6 +22,7 @@ Redmine::Plugin.register :redmine_koneta do
             'all_time_entries' => '1',
             'all_news' => '1',
             'all_search' => '1',
+            'show_old_assignee' => '1',
           }, :partial => 'koneta/settings'
 
   # プロジェクトメニュー

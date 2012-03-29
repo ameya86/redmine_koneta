@@ -5,6 +5,12 @@
     <%= check_box_tag('settings[notice_close_button]', '1', '1' == @settings['notice_close_button']) %>
     <%= l(:field_notice_close_button) %>
   </label>
+
+  <label class="inline" for="settings_show_old_assignee">
+    <%= hidden_field_tag('settings[show_old_assignee]', '0', :id => nil) %>
+    <%= check_box_tag('settings[show_old_assignee]', '1', '1' == @settings['show_old_assignee']) %>
+    <%= l(:field_show_old_assignee) %>
+  </label>
 </fieldset>
 
 <p>&nbsp;</p>

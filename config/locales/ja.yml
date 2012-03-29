@@ -1,5 +1,6 @@
 ja:
   field_notice_close_button: お知らせに閉じるボタンを付ける
+  field_show_old_assignee: チケットの担当者欄にひとつ前の担当者も表示する
   field_project_menu_add_search: プロジェクトモジュールに「検索」を追加する
   field_project_menu_extend: プロジェクトメニューの拡張
   field_application_menu_extend: アプリケーションメニューの拡張
