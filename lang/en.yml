@@ -3,5 +3,8 @@ field_project_menu_add_search: "Add search link on project module"
 field_show_old_assignee: "Show old assignee on issue list"
 field_project_menu_extend: Extend project menu
 field_application_menu_extend: Extend application menu
+field_project_setting_custom_fields_trackers: Show tracker and custom field relations for project setting page
+
+label_custom_fields_trackers: Tracker and Custom field
 
 project_module_search: Search

@@ -4,13 +4,19 @@
     <%= hidden_field_tag('settings[notice_close_button]', '0', :id => nil) %>
     <%= check_box_tag('settings[notice_close_button]', '1', '1' == @settings['notice_close_button']) %>
     <%= l(:field_notice_close_button) %>
-  </label>
+  </label><br />
 
   <label class="inline" for="settings_show_old_assignee">
     <%= hidden_field_tag('settings[show_old_assignee]', '0', :id => nil) %>
     <%= check_box_tag('settings[show_old_assignee]', '1', '1' == @settings['show_old_assignee']) %>
     <%= l(:field_show_old_assignee) %>
-  </label>
+  </label><br />
+
+  <label class="inline" for="settings_project_setting_custom_fields_trackers">
+    <%= hidden_field_tag('settings[project_setting_custom_fields_trackers]', '0', :id => nil) %>
+    <%= check_box_tag('settings[project_setting_custom_fields_trackers]', '1', '1' == @settings['project_setting_custom_fields_trackers']) %>
+    <%= l(:field_project_setting_custom_fields_trackers) %>
+  </label><br />
 </fieldset>
 
 <p>&nbsp;</p>

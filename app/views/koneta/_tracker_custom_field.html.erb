@@ -1,0 +1,49 @@
+<%# トラッカーとカスタムフィールドが両方ある場合のみ使用する %>
+<% if '1' == Setting.plugin_redmine_koneta['project_setting_custom_fields_trackers'] && @trackers.any? && @issue_custom_fields.any? %>
+
+<%# 本来はdivに収まるべきだが、閉じてしまう
+他のプラグインのHook利用に悪影響が出るので注意 %>
+</div>
+
+<h4><%= l(:label_custom_fields_trackers) %></h4>
+<div class="autoscroll">
+<table class="list">
+<thead>
+  <tr>
+    <th></th>
+  <% @trackers.each do |tracker| %>
+    <th>
+      <label class="inline" style="white-space: nowrap;">
+        <%= check_box_tag('project[tracker_ids][]', tracker.id, @project.trackers.include?(tracker)) %><br />
+        <%= h(tracker.name) %>
+      </label>
+    </th>
+  <% end %>
+  </tr>
+</thead>
+<tbody>
+<% @issue_custom_fields.each do |custom_field| %>
+  <tr class="<%= cycle('odd', 'evem') %>">
+    <td>
+      <label class="inline" style="white-space: nowrap;">
+        <%= check_box_tag('project[issue_custom_field_ids][]', custom_field.id, @project.all_issue_custom_fields.include?(custom_field), (custom_field.is_for_all?)? {:disabled => "disabled"} : {}) %>
+        <%= h(custom_field.name) %>
+      </label>
+    </td>
+  <% @trackers.each do |tracker| %>
+    <td style="text-align: center;">
+      <%= image_tag((custom_field.trackers.include?(tracker))? 'true.png' : 'false.png') %>
+    </td>
+  <% end %>
+  </tr>
+<% end %>
+</tbody>
+</table>
+</div>
+
+<%# 通常のトラッカー、カスタムフィールド編集欄を表示させないために以下の変数は空にしてしまう %>
+<% @trackers = @issue_custom_fields = [] %>
+
+<%# Hook直後にあるdivの終了タグを無効化するために不可視のdivタグを置いておく %>
+<div style="display: none;">
+<% end %>
