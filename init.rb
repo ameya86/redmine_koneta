@@ -5,7 +5,7 @@ Redmine::Plugin.register :redmine_koneta do
   name 'Redmine Koneta plugin'
   author 'Author name'
   description 'This is a plugin for Redmine'
-  version '0.0.4'
+  version '0.0.5'
   url 'https://github.com/ameya86/redmine_koneta'
   author_url 'http://blog.livedoor.jp/ameya86/'
 

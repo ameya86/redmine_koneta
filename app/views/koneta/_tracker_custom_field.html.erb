@@ -39,6 +39,8 @@
 <% end %>
 </tbody>
 </table>
+<%= hidden_field_tag('project[tracker_ids][]', '') %>
+<%= hidden_field_tag('project[issue_custom_field_ids][]', '') %>
 </div>
 
 <%# 通常のトラッカー、カスタムフィールド編集欄を表示させないために以下の変数は空にしてしまう %>
