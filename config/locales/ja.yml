@@ -5,6 +5,7 @@ ja:
   field_project_menu_extend: プロジェクトメニューの拡張
   field_application_menu_extend: アプリケーションメニューの拡張
   field_project_setting_custom_fields_trackers: プロジェクト設定画面でトラッカーとカスタムフィールドの関連を表示する
+  field_all_or_nothing_filter: チケットのフィルタでテキスト、長いテキスト、日付系項目の条件に「なし」「すべて」を追加する
 
   label_custom_fields_trackers: トラッカーとカスタムフィールド
 

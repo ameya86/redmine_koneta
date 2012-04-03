@@ -7,7 +7,6 @@ module KonetaApplicationHelperPatch
     base.class_eval do
       alias_method_chain :render_flash_messages, :koneta
     end
-
   end
 
   module InstanceMethods # obj.method

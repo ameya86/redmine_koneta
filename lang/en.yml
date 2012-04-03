@@ -4,6 +4,7 @@ field_show_old_assignee: "Show old assignee on issue list"
 field_project_menu_extend: Extend project menu
 field_application_menu_extend: Extend application menu
 field_project_setting_custom_fields_trackers: Show tracker and custom field relations for project setting page
+field_all_or_nothing_filter: "Issues 'text' 'long text' 'date' columns filter add 'all' 'none'"
 
 label_custom_fields_trackers: Tracker and Custom field
 

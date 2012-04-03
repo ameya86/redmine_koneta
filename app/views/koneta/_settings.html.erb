@@ -17,6 +17,12 @@
     <%= check_box_tag('settings[project_setting_custom_fields_trackers]', '1', '1' == @settings['project_setting_custom_fields_trackers']) %>
     <%= l(:field_project_setting_custom_fields_trackers) %>
   </label><br />
+
+  <label class="inline" for="settings_all_or_nothing_filter">
+    <%= hidden_field_tag('settings[all_or_nothing_filter]', '0', :id => nil) %>
+    <%= check_box_tag('settings[all_or_nothing_filter]', '1', '1' == @settings['all_or_nothing_filter']) %>
+    <%= l(:field_all_or_nothing_filter) %>
+  </label><br />
 </fieldset>
 
 <p>&nbsp;</p>
