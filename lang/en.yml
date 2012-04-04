@@ -5,7 +5,16 @@ field_project_menu_extend: Extend project menu
 field_application_menu_extend: Extend application menu
 field_project_setting_custom_fields_trackers: Show tracker and custom field relations for project setting page
 field_all_or_nothing_filter: "Issues 'text' 'long text' 'date' columns filter add 'all' 'none'"
+field_error: Error
+field_catch_error: "Raise error, keep redmine style"
 
 label_custom_fields_trackers: Tracker and Custom field
+
+label_raise_404_error: Raise 404 error
+label_raise_404_error_with_project: Raise 404 error with project
+label_raise_500_error: Raise 500 error
+label_raise_500_error_with_project: Raise 500 error
+
+error_occurred: Error occurred.
 
 project_module_search: Search

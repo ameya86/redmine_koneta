@@ -1,3 +1,4 @@
+require 'koneta/application_controller_patch'
 require 'koneta/access_controller_patch'
 require 'koneta/application_helper_patch'
 require 'koneta/search_controller_patch'

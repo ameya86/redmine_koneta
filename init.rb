@@ -5,7 +5,7 @@ Redmine::Plugin.register :redmine_koneta do
   name 'Redmine Koneta plugin'
   author 'OZAWA Yasuhiro'
   description 'This is a plugin for Redmine'
-  version '0.0.6'
+  version '0.0.7'
   url 'https://github.com/ameya86/redmine_koneta'
   author_url 'http://blog.livedoor.jp/ameya86/'
 
@@ -22,6 +22,7 @@ Redmine::Plugin.register :redmine_koneta do
             'show_old_assignee' => '1',
             'project_setting_custom_fields_trackers' => '1',
             'all_or_nothing_filter' => '1',
+            'catch_error' => '1',
           }, :partial => 'koneta/settings'
 
   # プロジェクトメニュー

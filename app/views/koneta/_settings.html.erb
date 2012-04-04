@@ -89,3 +89,19 @@
     <%= l(:label_search) %>
   </label>
 </fieldset>
+
+<p>&nbsp;</p>
+
+<fieldset>
+  <legend><%= l(:field_error) %></legend>
+  <label class="inline" for="settings_catch_error">
+    <%= hidden_field_tag('settings[catch_error]', '0', :id => nil) %>
+    <%= check_box_tag('settings[catch_error]', '1', '1' == @settings['catch_error']) %>
+    <%= l(:field_catch_error) %>
+  </label><br /><br />
+
+  <%= link_to(l(:label_raise_404_error), {:controller => 'koneta', :action => 'e404'}) %><br />
+  <%= link_to(l(:label_raise_404_error_with_project), {:controller => 'koneta', :action => 'e404', :p => 1}) %><br />
+  <%= link_to(l(:label_raise_500_error), {:controller => 'koneta', :action => 'e500'}) %><br />
+  <%= link_to(l(:label_raise_500_error_with_project), {:controller => 'koneta', :action => 'e500', :p => 1}) %>
+</fieldset>

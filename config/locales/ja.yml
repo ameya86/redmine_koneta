@@ -6,7 +6,16 @@ ja:
   field_application_menu_extend: アプリケーションメニューの拡張
   field_project_setting_custom_fields_trackers: プロジェクト設定画面でトラッカーとカスタムフィールドの関連を表示する
   field_all_or_nothing_filter: チケットのフィルタでテキスト、長いテキスト、日付系項目の条件に「なし」「すべて」を追加する
+  field_error: エラー
+  field_catch_error: エラー時もRedmineのデザインを保持する
 
   label_custom_fields_trackers: トラッカーとカスタムフィールド
+
+  label_raise_404_error: "404エラーを発生させる"
+  label_raise_404_error_with_project: "404エラーを発生させる（プロジェクトあり）" 
+  label_raise_500_error: "500エラーを発生させる"
+  label_raise_500_error_with_project: "500エラーを発生させる（プロジェクトあり）"
+
+  error_occurred: エラーが発生しました。
 
   project_module_search: 検索
